@@ -1,6 +1,5 @@
 # -*- coding:utf8 -*-
 from django.db import models
-from django.contrib import admin
 # Create your models here.
 UPLOAD_ROOT = 'item'
 
@@ -21,4 +20,3 @@ class Picture(models.Model):
     type = models.ForeignKey(Albums,verbose_name = '相册选择',help_text='图片会自动上传到您指定的相册位置')
     def __unicode__(self):
         return '%s -- in %s' %(self.picname,self.type)
-admin.site.register((Picture,Albums,Picstyle))

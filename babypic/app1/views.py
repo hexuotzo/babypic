@@ -3,6 +3,6 @@
 from models import Picture
 from django.shortcuts import render_to_response
 def test(request):
-    testpic = Picture.objects.get(picname = '萌图')
+    testpic = Picture.objects.get(picname = 'test1')
     return render_to_response('test.html',locals())
     

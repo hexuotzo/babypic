@@ -5,8 +5,12 @@
     <body>
         {{testpic.picname}}
             <p>
-        <img src="{{testpic.pic}}">
+    
+        <img src="{{testpic.pic.url}}" height="480" weight="300">
             <p>
-        {{testpic.describe}}
+        {{testpic.describe}}<p>
+名字：{{testpic.pic.name}}<p>
+路径：{{testpic.pic.path}}<p>
+连接：{{testpic.pic.url}}<p>
     </body>
 </html>

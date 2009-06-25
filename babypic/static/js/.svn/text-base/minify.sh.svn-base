@@ -1,0 +1,1 @@
+/Applications/Utilities/jsmin < jquery.galleriffic.js > jquery.galleriffic.min.js "(c) 2008 Trent Foley"

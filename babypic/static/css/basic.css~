@@ -17,7 +17,7 @@ a:focus, a:hover, a:active {
 	text-decoration: underline;
 }
 p, li {
-	line-height: 2em;
+	line-height: 1.8em;
 }
 h1, h2 {
 	font-family: "Trebuchet MS", Verdana, sans-serif;

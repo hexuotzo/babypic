@@ -19,6 +19,5 @@ urlpatterns = patterns('',
         {'document_root': settings.MEDIA_ROOT}),
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', 
         {'document_root': settings.ADMIN_MEDIA_ROOT}),
-    (r'^css/','babypic.app1.views.testcss'),
     
 )

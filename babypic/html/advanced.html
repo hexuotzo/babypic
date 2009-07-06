@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="/static/js/jquery.galleriffic.js"></script>
 	</head>
 	<body>
-		<div id="page">
+		<div id="pic">
 			<div id="container">
 				<!-- Start Advanced Gallery Html Containers -->
 				<div id="gallery" class="content">
@@ -31,7 +31,22 @@
 				<div style="clear: both;"></div>
 			</div>
 		</div>
-		<div id="footer">&copy; 测试CSS页</div>
+		<div id="guide">
+			<ul class="overflow">
+				<li><a href="{{domain}}/index/" >首页</a></li>
+				<li><a href="{{domain}}/about/" >关于我们</a></li>
+				<li><a href="/" class="active">作品欣赏1</a></li>
+				<li><a href="" >作品欣赏2</a></li>
+		
+				<li><a href="" >产品活动</a></li>
+				<li><a href="" >服务指南</a></li>
+				<li><a href="" >留言板</a></li>
+				<li><a href="" >友情链接</a></li>
+			</ul>
+		
+		</div>
+		
+		<div id="footer">&copy; 测试页</div>
 		<script type="text/javascript">
 			// We only want these styles applied when javascript is enabled
 			$('div.navigation').css({'width' : '300px', 'float' : 'left'});
@@ -43,18 +58,18 @@
 			$('#thumbs ul.thumbs li').css('opacity', onMouseOutOpacity)
 				.hover(
 					function () {
-						$(this).not('.selected').fadeTo('fast', 1.0);
+						$(this).not('.selected').fadeTo('slow', 1.0);
 					}, 
 					function () {
-						$(this).not('.selected').fadeTo('fast', onMouseOutOpacity);
+						$(this).not('.selected').fadeTo('slow', onMouseOutOpacity);
 					}
 				);
 
 			$(document).ready(function() {
 				// Initialize Advanced Galleriffic Gallery
 				var galleryAdv = $('#gallery').galleriffic('#thumbs', {
-					delay:                  2000,
-					numThumbs:              9,
+					delay:                  3500,
+					numThumbs:              12,
 					preloadAhead:           10,
 					enableTopPager:         true,
 					enableBottomPager:      true,

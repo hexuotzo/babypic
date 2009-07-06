@@ -5,7 +5,7 @@ html, body {
 body{
 	text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-	background-color: #eee;
+	background-color: #001155;
 	color: #444;
 	font-size: 75%;
 }
@@ -17,7 +17,7 @@ a:focus, a:hover, a:active {
 	text-decoration: underline;
 }
 p, li {
-	line-height: 1.8em;
+	line-height: 2em;
 }
 h1, h2 {
 	font-family: "Trebuchet MS", Verdana, sans-serif;

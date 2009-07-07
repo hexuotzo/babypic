@@ -1,11 +1,40 @@
 .overflow{overflow:auto;zoom:1; }
 #guide  { width:900px; margin:0 auto;}
-#guide ul { background:#003466 repeat-x; height:25px; padding-left:50px; border-left:0px solid #DAD7CF; border-right:0px solid #DAD7CF;}
+#guide ul { background:#003466 repeat-x; 
+			height:25px; 
+			padding-left:0px; 
+			border-left:0px solid #DAD7CF; 
+			border-right:0px solid #DAD7CF;
+			list-style:none;}
 #guide li { float:left;}
-#guide li a { font-size:11px; display:block;width:91px;text-align:center; line-height:25px;}
-#guide li a:link,#guide li a:visited {background:#003466 no-repeat; }
-#guide li a:hover,#guide li a:active,#guide li a.active {background: #bfb9b9 no-repeat; }
+#guide li a { font-size:11px; 
+              display:block;
+			width:60px;
+			text-align:center; 
+			line-height:20px;}
+#guide li a:link,
+#guide li a:visited {background:#003466 no-repeat; }
+#guide li a:hover,
+#guide li a:active,#guide li a.active {background: #bfb9b9 no-repeat; }
 
+.language{overflow:auto;zoom:1; }
+#guidel  { width:900px; margin:0 auto;}
+#guidel ul { background:#003466 repeat-x; 
+			height:25px; 
+			padding-left:0px; 
+			border-left:0px solid #DAD7CF; 
+			border-right:0px solid #DAD7CF;
+			list-style:none;}
+#guidel li { float:left;}
+#guidel li a { font-size:12px; 
+              display:block;
+			width:50px;
+			text-align:center; 
+			line-height:20px;}
+#guidel li a:link,
+#guidel li a:visited {background:#003466 no-repeat; }
+#guidel li a:hover,
+#guidel li a:active,#guide li a.active {background: #bfb9b9 no-repeat; }
 
 html, body {
 	margin:0;
@@ -51,7 +80,7 @@ pre {
 div#pic {
 	width: 900px;
 	background: url(http://127.0.0.1:8000/static/css/picground.jpg) repeat-x;
-	margin: 30 auto;
+	margin: 1 auto;
 	text-align: left;
 	border-color: #ddd;
 	border-style: none solid solid;

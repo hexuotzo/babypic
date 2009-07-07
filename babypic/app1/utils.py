@@ -3,14 +3,8 @@ import Image
 
 def make_thumb(path, size = 480):
     pixbuf = Image.open(path)
-    width, height = pixbuf.size
-
-    if width > size:
-        delta = width / size
-        height = int(height / delta)
-        pixbuf.thumbnail((size, height), Image.ANTIALIAS)
-
-        return pixbuf
+    pixbuf.thumbnail((size, size), Image.ANTIALIAS)
+    return pixbuf
 def make_thumb_small(path,size=65):
     pixbuf = Image.open(path)
     width, height = pixbuf.size

@@ -79,12 +79,12 @@ pre {
 }
 div#pic {
 	width: 900px;
-	background: url(http://127.0.0.1:8000/static/css/picground.jpg) repeat-x;
+	background: url(/static/css/picground.jpg) repeat-x;
 	margin: 1 auto;
 	text-align: left;
 	border-color: #ddd;
 	border-style: none solid solid;
-	border-width: medium 1px 1px;
+	border-width: medium 0px 0px;
 }
    
 div#container {

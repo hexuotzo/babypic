@@ -8,6 +8,6 @@ def test(request):
     testpic = Picture.objects.filter(type=1)
     return render_to_response('advanced.html',locals())
 def aboutus(request):
-    return render_to_response('about.html',locals())
+    return render_to_response('flatpages/default.html',locals())
     
     

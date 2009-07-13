@@ -29,7 +29,7 @@ TIME_ZONE = 'America/Chicago'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'zh-CN'
 
-SITE_ID = 1
+SITE_ID = 2
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -66,6 +66,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware' ,
 )
 
 ROOT_URLCONF = 'babypic.urls'
@@ -85,7 +86,8 @@ INSTALLED_APPS = (
     'babypic.app1',
     'django.contrib.admin',  
     'django.contrib.contenttypes',  
-    'django.contrib.sessions',     
+    'django.contrib.sessions', 
+    'django.contrib.flatpages',    
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (  

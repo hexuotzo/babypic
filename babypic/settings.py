@@ -1,6 +1,6 @@
 # Django settings for babypic project.
 from os.path import join
-settings_path = '/home/hexuotzo/desktop/djangotest/babypic/babypic/'
+settings_path = '/home/babypic/babypic/'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -27,7 +27,7 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'zh-CN'
+LANGUAGE_CODE = 'en-us'
 
 SITE_ID = 1
 
@@ -60,21 +60,19 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.load_template_source',
 #     'django.template.loaders.eggs.load_template_source',
 )
-
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
-
 ROOT_URLCONF = 'babypic.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/hexuotzo/desktop/djangotest/babypic/babypic/html'
+    '/Users/uc0079/babypic/babypic/html'
 )
 
 INSTALLED_APPS = (
@@ -82,16 +80,22 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'babypic.app1',
     'django.contrib.admin',  
     'django.contrib.contenttypes',  
-    'django.contrib.sessions',     
+    'django.contrib.sessions',   
+    'babypic.app1',  
 )
 
-TEMPLATE_CONTEXT_PROCESSORS = (  
-    'django.core.context_processors.auth',  
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.i18n',
 )
-        
+
+ugettext = lambda s: s
+LANGUAGES = (
+   ('zh_cn', ugettext('Simplified Chinese')),
+   ('en', ugettext('English')),
+)
 
 DEFAULT_CHARSET = 'utf-8'
 DOMAIN = 'http://127.0.0.1:8000'

@@ -17,6 +17,9 @@ def aboutus(request):
     
 def i18n(request):
     ab = "About us"
+    ga = "Galleries"
+    ous = "OurStudio"
+    cts = "Contact"
     output = _("Welcome to my site.")
     return render_to_response('base.html',locals())
 

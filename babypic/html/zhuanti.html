@@ -32,7 +32,8 @@
                         <ul class="thumbs noscript">
                         {% for i in pic %}
                             <li>
-                                <a class="thumb" href="{{i.thumb.url}}" title="Title">
+                                <a class="thumb" href="{{i.thumb.url}}" title="Title
+								">
                                     <img src="{{i.thumb_small.url}}" alt="Title" />
                                 </a>
                             </li>
@@ -44,5 +45,66 @@
                 </div>                
             </div>	    
 		<div id="footer">&copy; 测试页</div>
+        <script type="text/javascript">
+			// We only want these styles applied when javascript is enabled
+			$('div.navigation').css({'width' : '300px', 'float' : 'left'});
+			$('div.content').css('display', 'block');
+
+			// Initially set opacity on thumbs and add
+			// additional styling for hover effect on thumbs
+			var onMouseOutOpacity = 0.67;
+			$('#thumbs ul.thumbs li').css('opacity', onMouseOutOpacity)
+				.hover(
+					function () {
+						$(this).not('.selected').fadeTo('slow', 1.0);
+					}, 
+					function () {
+						$(this).not('.selected').fadeTo('slow', onMouseOutOpacity);
+					}
+				);
+
+			$(document).ready(function() {
+				// Initialize Advanced Galleriffic Gallery
+				var galleryAdv = $('#gallery').galleriffic('#thumbs', {
+					delay:                  3500,
+					numThumbs:              12,
+					preloadAhead:           10,
+					enableTopPager:         true,
+					enableBottomPager:      true,
+					imageContainerSel:      '#slideshow',
+					controlsContainerSel:   '#controls',
+					captionContainerSel:    '#caption',
+					loadingContainerSel:    '#loading',
+					renderSSControls:       true,
+					renderNavControls:      true,
+					playLinkText:           '自动播放',
+					pauseLinkText:          '停止播放',
+					prevLinkText:           '&lsaquo; 上一张',
+					nextLinkText:           '下一张 &rsaquo;',
+					nextPageLinkText:       '后一页 &rsaquo;',
+					prevPageLinkText:       '&lsaquo; 前一页',
+					enableHistory:          true,
+					autoStart:              true,
+					onChange:               function(prevIndex, nextIndex) {
+						$('#thumbs ul.thumbs').children()
+							.eq(prevIndex).fadeTo('slow', onMouseOutOpacity).end()
+							.eq(nextIndex).fadeTo('slow', 1.0);
+					},
+					onTransitionOut:        function(callback) {
+						$('#caption').fadeOut('slow');
+						$('#slideshow').fadeOut('slow', callback);
+					},
+					onTransitionIn:         function() {
+						$('#slideshow, #caption').fadeIn('slow');
+					},
+					onPageTransitionOut:    function(callback) {
+						$('#thumbs ul.thumbs').fadeOut('slow', callback);
+					},
+					onPageTransitionIn:     function() {
+						$('#thumbs ul.thumbs').fadeIn('slow');
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

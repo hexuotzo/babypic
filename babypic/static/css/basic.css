@@ -146,10 +146,9 @@ div#zhuanti{
 	text-align: left;
 	border-color: #ddd;
 	border-style: none solid solid;
-	border-width: medium 0px 0px;  
-    filter:progid:DXImageTransform.Microsoft.Shadow 
-    (Color=#333333,Direction=120,strength=5);	  
+	border-width: medium 0px 0px;  	  
 }
+
 div#container {
 	padding: 20px;
 }

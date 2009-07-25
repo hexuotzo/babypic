@@ -3,11 +3,30 @@
         <title>testpage</title>
     </head>
     <body>
-        {% for i in pic %}
-            <p>
-        <img src="{{i.thumb.url}}">
-            <p>
-        {% endfor %}
+<div id="pic">
+                <div id="container">
+                    <!-- Start Advanced Gallery Html Containers -->
+                    <div id="gallery" class="content">
+                        <div id="controls" class="controls"></div>
+                        <div id="loading" class="loader"></div>
+                        <div id="slideshow" class="slideshow"></div>
+                    </div>
+                    <div id="thumbs" class="navigation">
+                        <ul class="thumbs noscript">
+                        {% for i in pic %}
+                            <li>
+                                <a class="thumb" href="{{i.thumb.url}}" title="Title
+								">
+                                    <img src="{{i.thumb_small.url}}" alt="Title" />
+                                </a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <!-- End Advanced Gallery Html Containers -->
+                    <div style="clear: both;"></div>
+                </div>                
+            </div>	    
 名字：{{testpic.pic.name}}<p>
 路径：{{testpic.pic.path}}<p>
 连接：{{testpic.pic.url}}<p>

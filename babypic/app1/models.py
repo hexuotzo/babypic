@@ -9,6 +9,7 @@ from utils import make_thumb,make_thumb_small
 UPLOAD_ROOT = 'item'
 THUMB_ROOT = 'thumb'
 THUMB_SMALL_ROOT = 'thumb/small'
+MUSIC_ROOT = 'music'
 class Picstyle(models.Model):
     style = models.CharField('风格',max_length=50)
     def __unicode__(self):
@@ -37,7 +38,10 @@ class Picture(models.Model):
         self.thumb = ImageFieldFile(self, self.thumb, relate_thumb_path)
         self.thumb_small = ImageFieldFile(self,self.thumb_small,relate_thumb_small_path)
         super(Picture, self).save()
-
-
     def __unicode__(self):
         return '%s -- in %s' %(self.picname,self.type)
+class Music(models.Model):
+    name = models.CharField('音乐名称',max_length=100,blank = True)
+    music = models.FileField('音乐上传',upload_to = MUSIC_ROOT)
+    def __unicode__(self):
+        return self.name    

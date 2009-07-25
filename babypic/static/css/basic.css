@@ -1,40 +1,28 @@
-.overflow{overflow:auto;zoom:1; }
-#guide  { width:900px; margin:0 auto;}
-#guide ul { background:#003466 repeat-x; 
-			height:25px; 
+#guide  { width:900px; margin: -10 auto;}
+#guide ul { height:40px; 
 			padding-left:0px; 
 			border-left:0px solid #DAD7CF; 
 			border-right:0px solid #DAD7CF;
-			list-style:none;}
+			list-style:none;
+			}
 #guide li { float:left;}
-#guide li a { font-size:11px; 
+#guide li a { font-size:13px; 
               display:block;
-			width:60px;
+			width:90px;
 			text-align:center; 
-			line-height:20px;}
+			line-height:30px;
+			color:#ffffff}
 #guide li a:link,
-#guide li a:visited {background:#003466 no-repeat; }
+#guide li a:visited {background: no-repeat; }
 #guide li a:hover,
-#guide li a:active,#guide li a.active {background: #bfb9b9 no-repeat; }
+#guide li a.active {border-style:outset; }
 
-.language{overflow:auto;zoom:1; }
-#guidel  { width:900px; margin:0 auto;}
-#guidel ul { background:#003466 repeat-x; 
-			height:25px; 
-			padding-left:0px; 
-			border-left:0px solid #DAD7CF; 
-			border-right:0px solid #DAD7CF;
-			list-style:none;}
-#guidel li { float:left;}
-#guidel li a { font-size:12px; 
-              display:block;
-			width:50px;
-			text-align:center; 
-			line-height:20px;}
-#guidel li a:link,
-#guidel li a:visited {background:#003466 no-repeat; }
-#guidel li a:hover,
-#guidel li a:active,#guide li a.active {background: #bfb9b9 no-repeat; }
+
+#language { width:38%; margin:0px auto;}
+
+
+li#point {list-style:none;}
+img{border-style: none;}
 
 html, body {
 	margin:0;
@@ -43,7 +31,7 @@ html, body {
 body{
 	text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-	background: #003466 repeat-x;
+	background: url(/static/css/bck.jpg) repeat-x;
 	color: #444;
 	font-size: 75%;
 }
@@ -77,16 +65,91 @@ pre {
 	font-size: 1.2em;
 	line-height: 1.2em;
 }
-div#pic {
-	width: 900px;
-	background: url(/static/css/picground.jpg) repeat-x;
-	margin: 1 auto;
+
+div#logo {
+	height:186px;
+	width: 912px;
+	background: url(/static/css/logo.jpg) repeat-x;
+	margin: -5 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;    
+}
+
+div#index {
+    height:339px;
+	width: 915px;
+	background: url(/static/css/background/index_bg.jpg);
+	margin: -10 auto;
 	text-align: left;
 	border-color: #ddd;
 	border-style: none solid solid;
 	border-width: medium 0px 0px;
+	filter:progid:DXImageTransform.Microsoft.Shadow 
+	(Color=#333333,Direction=120,strength=5);
+	
 }
-   
+div#about {
+	height:506px;
+	width: 915px;
+	background: url(/static/css/background/about_bg.jpg);
+	margin: 1 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;  
+    filter:progid:DXImageTransform.Microsoft.Shadow 
+    (Color=#333333,Direction=120,strength=5);	  
+}
+
+div#appreciation{
+	height:503px;
+	width: 913px;
+	background: url(/static/css/background/appreciation_bg.jpg);
+	margin: 1 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;  
+    filter:progid:DXImageTransform.Microsoft.Shadow 
+    (Color=#333333,Direction=120,strength=5);	  
+}
+div#sheying{
+	height:502px;
+	width: 910px;
+	background: url(/static/css/background/sheying_bg.jpg);
+	margin: 1 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;  
+    filter:progid:DXImageTransform.Microsoft.Shadow 
+    (Color=#333333,Direction=120,strength=5);	  
+}
+div#chanpin{
+	height:503px;
+	width: 914px;
+	background: url(/static/css/background/chanpin_bg.jpg);
+	margin: 1 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;  
+    filter:progid:DXImageTransform.Microsoft.Shadow 
+    (Color=#333333,Direction=120,strength=5);	  
+}
+div#zhuanti{
+	width: 905px;
+	background: url(/static/css/background/picground.jpg);
+	margin: 1 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;  
+    filter:progid:DXImageTransform.Microsoft.Shadow 
+    (Color=#333333,Direction=120,strength=5);	  
+}
 div#container {
 	padding: 20px;
 }

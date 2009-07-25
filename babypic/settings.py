@@ -1,6 +1,4 @@
 # Django settings for babypic project.
-from os.path import join
-settings_path = '/home/hexuotzo/desktop/djangotest/babypic/babypic/'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -29,7 +27,7 @@ TIME_ZONE = 'America/Chicago'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'zh-CN'
 
-SITE_ID = 2
+SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -37,14 +35,14 @@ USE_I18N = True
 
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
-MEDIA_ROOT = join(settings_path, 'static')
-ADMIN_MEDIA_ROOT = join(settings_path, 'media')
+MEDIA_ROOT = 'static'
+ADMIN_MEDIA_ROOT = 'media'
 
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = 'http://127.0.0.1:8000/static/'
+MEDIA_URL = '/static/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
@@ -75,7 +73,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/hexuotzo/desktop/djangotest/babypic/babypic/html'
+    'html'
 )
 
 INSTALLED_APPS = (

@@ -3,11 +3,11 @@
         <title>testpage</title>
     </head>
     <body>
-        {{testpic.picname}}
+        {% for i in pic %}
             <p>
-        <img src="{{testpic.pic.url}}" height="480" weight="300">
+        <img src="{{i.thumb.url}}">
             <p>
-        {{testpic.describe}}<p>
+        {% endfor %}
 名字：{{testpic.pic.name}}<p>
 路径：{{testpic.pic.path}}<p>
 连接：{{testpic.pic.url}}<p>

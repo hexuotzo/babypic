@@ -15,7 +15,7 @@
 #guide li a:link,
 #guide li a:visited {background: no-repeat; }
 #guide li a:hover,
-#guide li a.active {border-style:outset; }
+#guide li a.active {border-style:groove; }
 
 
 #language { width:38%; margin:0px auto;}
@@ -162,4 +162,25 @@ div#footer {
 	margin: 0 auto;
 	padding: 20px 0 40px;
 	text-align: center;
+}
+div#wordabout {
+    width:300px;
+	height:390px;
+	text-align: left;
+	overflow: auto;
+	position :absolute;left:550px;top:300px;
+}
+div#wordchanpin{
+    width:700px;
+	height:168px;
+	text-align: left;
+	overflow: auto;
+	position :absolute;left:338px;top:308px;
+}
+div#wordsheying{
+    width:325px;
+	height:380px;
+	text-align: left;
+	overflow: auto;
+	position :absolute;left:785px;top:320px;
 }

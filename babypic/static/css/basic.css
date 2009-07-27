@@ -8,17 +8,13 @@
 #guide li { float:left;}
 #guide li a { font-size:13px; 
               display:block;
-			width:93px;
+			width:120px;
 			text-align:center; 
 			line-height:30px;
 			color:#ffffff}
-#guide li a:link,
-#guide li a:visited {background: no-repeat; }
-#guide li a:hover,
-#guide li a.active {border-style:groove; }
 
 
-#language { width:37%; margin:0px auto;}
+#language { width:20%;}
 
 
 li#point {list-style:none;
@@ -211,3 +207,9 @@ div#titlecontact{
 	text-align: left;
 	position :absolute;left:890px;top:448px;
 }
+
+
+.c1 {
+    background:url(/static/css/tag_bg.jpg) no-repeat;
+}
+.c2{}

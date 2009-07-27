@@ -1,23 +1,36 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>kid studio</title>
+		<title>yid studio</title>
 		<link rel="stylesheet" href="/static/css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="/static/css/galleriffic.css" type="text/css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 		<script type="text/javascript" src="/static/js/jquery.galleriffic.js"></script>		
+		<script>
+			$(document).ready(function(){ 
+				$(".c2").hover(
+					function () {
+						$(this).addClass("c1");
+					},
+					function () {
+						$(this).removeClass("c1");
+					}
+				);
+			}
+			);
+		</script>	    
 	</head>
 	<body>		
 		<div id="logo"></div>
 		<div id="guide">
 			<ul>
-				<li><a href="/testindex/" class=active ><img src="/static/css/tagen/li_index.jpg"></a></li>
-				<li><a href="/testabout/" ><img src="/static/css/tagen/li_about.jpg"></img></a></li>
-				<li><a href="/testappr/" ><img src="/static/css/tagen/li_pic.jpg"></img></a></li>
-				<li><a href="/testcp/" ><img src="/static/css/tagen/li_products.jpg"></img></a></li>
-				<li id="language"><a href="/message/" ><img src="/static/css/tagen/li_message.jpg"></img></a></li>
-				<li><a href="/index/"><b>中文版</b></a></li>
-				<li><a href="/testindex/"><b>English</b></a></li>				
+				<li class="c1"><a href="/testindex/"><img src="/static/css/tagen/li_index.jpg"></a></li>
+				<li class="c2"><a href="/testabout/"><img src="/static/css/tagen/li_about.jpg"></img></a></li>
+				<li class="c2"><a href="/testappr/" ><img src="/static/css/tagen/li_pic.jpg"></img></a></li>
+				<li class="c2"><a href="/testcp/" ><img src="/static/css/tagen/li_products.jpg"></img></a></li>
+				<li id="language" class="c2"><a href="/message/" ><img src="/static/css/tagen/li_message.jpg"></img></a></li>
+				<li class="c2"><a href="/index/"><b>中文版</b></a></li>
+				<li class="c2"><a href="/testindex/"><b>English</b></a></li>			
 		    </ul>
 		</div>
 		<div id="index"></div>

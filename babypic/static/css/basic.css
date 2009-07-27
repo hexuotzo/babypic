@@ -1,4 +1,4 @@
-#guide  { width:900px; margin: -10 auto;}
+#guide  { width:905px; margin: -10 auto;}
 #guide ul { height:40px; 
 			padding-left:0px; 
 			border-left:0px solid #DAD7CF; 
@@ -8,7 +8,7 @@
 #guide li { float:left;}
 #guide li a { font-size:13px; 
               display:block;
-			width:90px;
+			width:93px;
 			text-align:center; 
 			line-height:30px;
 			color:#ffffff}
@@ -18,10 +18,12 @@
 #guide li a.active {border-style:groove; }
 
 
-#language { width:38%; margin:0px auto;}
+#language { width:37%; margin:0px auto;}
 
 
-li#point {list-style:none;}
+li#point {list-style:none;
+	      margin: -5 auto;
+}
 img{border-style: none;}
 
 html, body {
@@ -167,8 +169,9 @@ div#wordabout {
     width:300px;
 	height:390px;
 	text-align: left;
-	overflow: auto;
 	position :absolute;left:550px;top:300px;
+	word-break:break-all;
+	overflow: auto;
 }
 div#wordchanpin{
     width:700px;
@@ -183,4 +186,28 @@ div#wordsheying{
 	text-align: left;
 	overflow: auto;
 	position :absolute;left:785px;top:320px;
+}
+div#titlesy{
+	width:150px;
+	height:50px;
+	text-align: left;
+	position :absolute;left:860px;top:265px;    
+}
+div#titlecp{
+	width:150px;
+	height:50px;
+	text-align: left;
+	position :absolute;left:610px;top:270px;
+}
+div#titlejs{
+	width:150px;
+	height:50px;
+	text-align: left;
+	position :absolute;left:545px;top:260px;
+}
+div#titlecontact{
+	width:150px;
+	height:50px;
+	text-align: left;
+	position :absolute;left:890px;top:448px;
 }

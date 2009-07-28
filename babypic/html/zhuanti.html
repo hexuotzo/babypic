@@ -28,7 +28,7 @@
 					<li class="c2"><a href="/about/"><img src="/static/css/tagcn/li_about.jpg"></img></a></li>
 					<li class="c1"><a href="/appreciation/" ><img src="/static/css/tagcn/li_pic.jpg"></img></a></li>
 					<li class="c2"><a href="/sheying/" ><img src="/static/css/tagcn/li_products.jpg"></img></a></li>
-					<li id="language" class="c2"><a href="/message/" ><img src="/static/css/tagcn/li_message.jpg"></img></a></li>
+					<li id="language" class="c2"><a href="/bbs/" ><img src="/static/css/tagcn/li_message.jpg"></img></a></li>
 					<li class="c2"><a href="/index/"><b>中文版</b></a></li>
 					<li class="c2"><a href="/testindex/"><b>English</b></a></li>						
 				</ul>
@@ -100,21 +100,21 @@
 					autoStart:              true,
 					onChange:               function(prevIndex, nextIndex) {
 						$('#thumbs ul.thumbs').children()
-							.eq(prevIndex).fadeTo('slow', onMouseOutOpacity).end()
-							.eq(nextIndex).fadeTo('slow', 1.0);
+							.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+							.eq(nextIndex).fadeTo('fast', 1.0);
 					},
 					onTransitionOut:        function(callback) {
-						$('#caption').fadeOut('slow');
-						$('#slideshow').fadeOut('slow', callback);
+						$('#caption').fadeOut('fast');
+						$('#slideshow').fadeOut('fast', callback);
 					},
 					onTransitionIn:         function() {
-						$('#slideshow, #caption').fadeIn('slow');
+						$('#slideshow, #caption').fadeIn('fast');
 					},
 					onPageTransitionOut:    function(callback) {
-						$('#thumbs ul.thumbs').fadeOut('slow', callback);
+						$('#thumbs ul.thumbs').fadeOut('fast', callback);
 					},
 					onPageTransitionIn:     function() {
-						$('#thumbs ul.thumbs').fadeIn('slow');
+						$('#thumbs ul.thumbs').fadeIn('fast');
 					}
 				});
 			});

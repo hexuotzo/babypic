@@ -146,6 +146,18 @@ div#zhuanti{
 	border-style: none solid solid;
 	border-width: medium 0px 0px;  	  
 }
+div#bbs{
+    height:422px;
+	width:915px;
+	background: url(/static/css/background/bbs_bg.jpg);
+	margin: 1 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 0px 0px;  
+    filter:progid:DXImageTransform.Microsoft.Shadow 
+    (Color=#333333,Direction=120,strength=5);		
+}
 
 div#container {
 	padding: 20px;
@@ -184,28 +196,24 @@ div#wordsheying{
 	position :absolute;left:785px;top:320px;
 }
 div#titlesy{
-	width:150px;
-	height:50px;
 	text-align: left;
 	position :absolute;left:860px;top:265px;    
 }
 div#titlecp{
-	width:150px;
-	height:50px;
 	text-align: left;
 	position :absolute;left:610px;top:270px;
 }
 div#titlejs{
-	width:150px;
-	height:50px;
 	text-align: left;
 	position :absolute;left:545px;top:260px;
 }
 div#titlecontact{
-	width:150px;
-	height:50px;
 	text-align: left;
 	position :absolute;left:890px;top:448px;
+}
+div#titlebbs{
+	text-align: left;
+	position :absolute;left:255px;top:245px;    
 }
 
 
@@ -213,3 +221,70 @@ div#titlecontact{
     background:url(/static/css/tag_bg.jpg) no-repeat;
 }
 .c2{}
+
+
+
+div#forms{
+    width:350px;
+	height:356px;
+	text-align: left;
+	position :absolute;left:280px;top:300px;        
+}
+
+input#id_name {
+    width:300px;
+    background-color:e2e0ee;
+}
+input#id_email {
+    width:300px;
+    background-color:e2e0ee;
+}
+textarea#id_body {
+    width:300px;
+	height:140px;
+	background-color:e2e0ee;
+}
+
+input#name {
+    width:300px;
+    background-color:e2e0ee;
+}
+input#email {
+    width:300px;
+    background-color:e2e0ee;
+}
+textarea#body {
+    width:300px;
+	height:140px;
+	background-color:e2e0ee;
+}
+
+div#wordtest{
+    width:430px;
+	height:340px;
+	text-align: left;
+	color:#ffffff;
+	position :absolute;left:680px;top:255px;
+	word-break:break-all;
+	overflow: auto;	
+}
+div#paginator{
+    text-align:right;
+	color:#ffffff;
+	position :absolute;left:1040px;top:620px;
+}
+
+div#wordtest2{
+    width:360px;
+	height:310px;
+	text-align: left;
+	color:#000000;
+	position :absolute;left:275px;top:288px;
+	word-break:break-all;
+	overflow: auto;	
+}
+div#paginator2{
+    text-align:right;
+	color:#000000;
+	position :absolute;left:560px;top:620px;
+}

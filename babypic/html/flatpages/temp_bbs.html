@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ flatpage.title }}
+{% endblock %}
+
+{% block body %}
+    <div id="bbs">
+        <div id="titlebbs">
+            <img src="/static/css/tagcn/title_bbs.jpg">
+        </div>
+        <div id="wordbbs">
+                　　   <form action="" method="post">
+                　　   <label for="name">姓名:</label><br>
+                　　   <input type="text" class="c3" id="name" name="user" value=""><p>
+                　　   <label for="email">邮件:</label><br>
+                　　   <input type="text" id="email" name="email" value=""><p>
+                　　   <label for="body">内容:</label><br>
+                　　   <textarea id="body" name="comment">
+                　　   </textarea><br>
+                　　   <input type="submit" id="submit"  value="发送">
+                　　   </form>  
+        </div>
+    </div>
+    <div id="wordtest">
+        <font size=2 color=#978dd6>{{flatpage.content|linebreaksbr}}</font>
+    </div>
+{% endblock %} 

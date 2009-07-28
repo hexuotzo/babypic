@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %} 
+        留言板
+{% endblock %}
+
+{% block body %}
+    <div id="bbs">
+        <div id="titlebbs">
+            <img src="/static/css/tagcn/title_bbs.jpg">
+        </div>
+        <div id="forms">
+            <form method="POST" action="/bbs/">
+                                姓名:<br>{{form.name}}<br>
+                     {{form.title.errors}}
+                Email:<br>{{form.email}}<br>
+                   {{form.email.errors}}
+                                评论:<br>{{form.body}}<br>
+                   {{form.body.errors}}
+                <input type="submit" value="提交">
+            </form>                　　     
+        </div>
+        <div id="wordtest">
+            {% for i in contacts.object_list%}
+            <font size="2">姓名:{{i.name}}<br></font>
+                          评论:{{i.body}}<p>
+            {% endfor%}
+        </div>
+        <div id="paginator">
+            {% if contacts.has_previous %}
+                   <a href = "?page={{contacts.previous_page_number}}"><<</a>
+            {% endif %}
+            
+            Page {{ contacts.number}} of {{contacts.paginator.num_pages}}.
+            
+            {% if contacts.has_next %}
+                   <a href = "?page={{contacts.next_page_number}}">>></a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %} 

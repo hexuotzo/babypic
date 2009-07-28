@@ -14,10 +14,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/(.*)', admin.site.root),
-    (r'^index/','babypic.app1.views.index'),
-    #(r'^appreciation/','babypic.app1.views.appreciation'),
-    #(r'^about/','babypic.app1.views.aboutus'),
     (r'^t/(?P<tid>.*)/', 'babypic.app1.views.t'),
+    (r'^bbs/','babypic.app1.views.bbs'),
+    (r'^message/','babypic.app1.views.message'),
     #(r'^music/','babypic.app1.views.music'),
     (r'^static/(?P<path>.*)$', 'django.views.static.serve', 
         {'document_root': settings.MEDIA_ROOT}),

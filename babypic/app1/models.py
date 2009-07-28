@@ -5,6 +5,7 @@ from settings import MEDIA_ROOT
 from django.utils.translation import ugettext as _
 from django.db.models.fields.files import ImageFieldFile
 from utils import make_thumb,make_thumb_small
+from django.forms import ModelForm
 
 UPLOAD_ROOT = 'item'
 THUMB_ROOT = 'thumb'
@@ -40,6 +41,15 @@ class Picture(models.Model):
         super(Picture, self).save()
     def __unicode__(self):
         return '%s -- in %s' %(self.picname,self.type)
+class Bbs(models.Model):
+    body = models.TextField('正文',max_length=50)
+    name = models.CharField(max_length=40)
+    email = models.EmailField(max_length=75)
+    def __unicode__(self):
+        return self.name
+class BbsForm(ModelForm):
+    class Meta:
+        model = Bbs
 class Music(models.Model):
     name = models.CharField('音乐名称',max_length=100,blank = True)
     music = models.FileField('音乐上传',upload_to = MUSIC_ROOT)
